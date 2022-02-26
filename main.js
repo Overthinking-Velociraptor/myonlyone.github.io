@@ -24,23 +24,23 @@ const clock = () => {
   //   Good Morning and Good Night Conditions
 
   if (hours <= 11) {
-    var greeting = "Good Morning " + name + "Happy Valentine❤️❤️";
+    var greeting = "Good Morning " + name + "Happy Birthday❤️❤️";
   }
 
   if (hours >= 11 && hours <= 12) {
-    var greeting = "Good Afternoon" + name + "Happy Valentine❤️❤️";
+    var greeting = "Good Afternoon" + name + "Happy Birthday❤️❤️";
   }
   
   if (hours >= 12 && hours <= 18) {
-    var greeting = "Good Afternoon " + name + "Happy Valentine❤️❤️";
+    var greeting = "Good Afternoon " + name + "Happy Birthday❤️❤️";
   }
 
   if (hours >= 18 && hours <= 22) {
-    var greeting = "Good Evening " + name + "Happy Valentine❤️❤️";
+    var greeting = "Good Evening " + name + "Happy Birthday❤️❤️";
   }
   
   if (hours >= 22 && hours <= 24) {
-    var greeting = "Good Night" + name + "Happy Valentine❤️❤️";
+    var greeting = "Good Night" + name + "Happy Birthday❤️❤️";
   }
 
   document.getElementById("greetings").innerHTML = greeting;
