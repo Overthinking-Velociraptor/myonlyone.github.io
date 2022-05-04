@@ -32,15 +32,15 @@ const clock = () => {
   }
   
   if (hours >= 12 && hours <= 18) {
-    var greeting = "Good Afternoon " + name + "Happy Birthday❤️❤️";
+    var greeting = "Good Afternoon " + name + "Jangan lupa minum ya sayang";
   }
 
   if (hours >= 18 && hours <= 22) {
-    var greeting = "Good Evening " + name + "Happy Birthday❤️❤️";
+    var greeting = "Good Evening " + name + "Jaga kondisi tetep banyak minum ya sayang";
   }
   
   if (hours >= 22 && hours <= 24) {
-    var greeting = "Good Night" + name + "Happy Birthday❤️❤️";
+    var greeting = "Good Night" + name + "Jangan tidur malem malem :)";
   }
 
   document.getElementById("greetings").innerHTML = greeting;
