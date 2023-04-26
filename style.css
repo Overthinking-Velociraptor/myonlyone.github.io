@@ -11,6 +11,13 @@ body
     background: rgb(255, 255, 255);
 }
 
+.status {
+  background-color: #e6e6e6;
+  color: #333;
+  padding: 10px;
+  font-size: 18px;
+}
+
 .wrapper1
 {
     text-align: center;
