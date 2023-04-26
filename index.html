@@ -14,6 +14,28 @@
             <div class="wrapper1">
                 <h1 id="judulatas">Bella & Ian</h1>
             </div>
+            <div id="status"></div>
+<input id="status-input" type="text">
+
+<script>
+  function updateStatus(text) {
+    var statusElement = document.getElementById("status");
+    statusElement.textContent = text;
+  }
+
+  $("#status-input").on("input", function() {
+    var text = $(this).val();
+    $.ajax({
+      url: "save_status.php",
+      method: "POST",
+      data: { text: text },
+      success: function(response) {
+        var statusElement = $("#status");
+        statusElement.text(response);
+      }
+    });
+  });
+</script>
             <div class="wrapper2">
                 <a href="https://forms.gle/2EBkEc1pzaZQfaCf8" target="_blank"><button>INPUT FORM KEUANGAN</button></a><br><br>
                 <a href="https://docs.google.com/spreadsheets/d/1GPlp742cgmC00A9OnnF3OW0hn-ELokUPmM0G-5kmIws/edit?usp=sharing" target="_blank"><button>HITUNG KEUANGAN</button></a><br><br>
